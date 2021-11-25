@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script language="javascript">
+      
+      var A, B, C, A2, B2, C2, A3, B3, C3, A4, B4, C4, S, S1, S2;
+      A = parseInt(window.prompt("digite o primeiro valor"));
+      B = parseInt(window.prompt("digite o segundo valor"));
+      C = parseInt(window.prompt("digite o terceiro valor"));
+      
+      if(A>B && A>C){
+        A2= A * A;
+        B2= B * B;
+        C2= C * C;
+        S = B2 + C2;
+
+        if(A2 == S){
+          document.write("é um triângulo retângulo");
+        }
+
+        else{
+        document.write("não é um triângulo retângulo");
+        }
+
+      }
+
+      else if(B>A && B>C){
+       B3= B * B;
+       A3= A * A;
+       C3= C * C;
+       S1= A3 + C3;
+
+       if(B3 == S1){
+         document.write("é um triângulo retângulo");
+       }
+       else{
+        document.write("não é um triângulo retângulo");
+       }
+
+      }
+
+      else if(C>A && C>B){
+       C4= C * C;
+       A4= A * A;
+       B4= B * B;
+       S2= A4 + B4;
+
+        if(C4 == S2){
+        document.write("é um triângulo retângulo");
+        }
+
+        else{
+          document.write("não é um triângulo retângulo");
+        }
+
+      }
+
+      else{
+        document.write("não é um triângulo retângulo");
+      }
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
